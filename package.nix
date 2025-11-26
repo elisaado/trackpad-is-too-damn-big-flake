@@ -3,7 +3,7 @@
   pkgs,
 }:
 with pkgs; let
-  version = "1.0.0";
+  version = "1.0.1";
   pname = "trackpad-is-too-damn-big";
 in
   stdenv.mkDerivation {
@@ -13,8 +13,9 @@ in
     src = fetchFromGitHub {
       owner = "luqmanishere";
       repo = "${pname}";
-      rev = "d85fbfc042fd717ee4a62c9bf4ff588ea9fdd009";
-      sha256 = "XLNk4FfTmVCv99uJhv2VWOf8hXOchSV330832pOvI3Y=";
+      rev = "b4397dcf8134b5f1d50e81c65fbade1de7540001";
+      sha256 = "VK9rbtX8Ww0dvbGo4qB+3VR6lLd5OTBwDUZwa7AShHo=";
+      fetchSubmodules = true;
     };
     nativeBuildInputs = [
       clang
